@@ -77,6 +77,7 @@ function initMap() {
         { lat: 44.850730, lng: -87.400947 },
         { lat: 44.850563, lng: -87.400861 },
         { lat: 44.850479, lng: -87.400883 },
+        { lat: 44.850274, lng: -87.401334 },
       ];
 
     const potawatomiSegment = new google.maps.Polyline({
