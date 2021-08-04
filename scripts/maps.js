@@ -8,7 +8,7 @@ function initMap() {
         mapTypeId: "satellite",
     });
 
-    const potawatomiCoordinates = [
+    const sturgeonBayCoordinates = [
         { lat: 44.876235, lng: -87.428203 },
         { lat: 44.875940, lng: -87.427940 },
         { lat: 44.875539, lng: -87.428184 },
@@ -42,7 +42,7 @@ function initMap() {
         { lat: 44.861109, lng: -87.410822 },
       ];
 
-      const potawatomiIncompleteCoordinates = [
+      const sturgeonBayIncompleteCoordinates = [
         { lat: 44.861109, lng: -87.410822 },
         { lat: 44.861048, lng: -87.410361 },
         { lat: 44.861093, lng: -87.409857 },
@@ -220,19 +220,19 @@ function initMap() {
         { lat: 44.747886, lng: -87.479794 },
       ];
 
-    const potawatomiSegment = new google.maps.Polyline({
+    const sturgeonBaySegment = new google.maps.Polyline({
         path: potawatomiCoordinates,
         strokeColor: "#32CD32",
         strokeOpacity: 1.0,
         strokeWeight: 6
     });
-    potawatomiSegment.setMap(map);
+    sturgeonBaySegment.setMap(map);
 
-    const potawatomiIncompleteSegment = new google.maps.Polyline({
-        path: potawatomiIncompleteCoordinates,
+    const sturgeonBayIncompleteSegment = new google.maps.Polyline({
+        path: sturgeonBayIncompleteCoordinates,
         strokeColor: "#F90B1A",
         strokeOpacity: 1.0,
         strokeWeight: 6
     });
-    potawatomiIncompleteSegment.setMap(map);
+    sturgeonBayIncompleteSegment.setMap(map);
 }
