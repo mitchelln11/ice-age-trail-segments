@@ -3,8 +3,8 @@ let map;
 function initMap() {
 
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 44.754286, lng: -87.466042 },
-        zoom: 18,
+        center: { lat: 44.747886, lng: -87.479794 },
+        zoom: 11,
         mapTypeId: "satellite",
     });
 
@@ -221,7 +221,7 @@ function initMap() {
       ];
 
     const sturgeonBaySegment = new google.maps.Polyline({
-        path: potawatomiCoordinates,
+        path: sturgeonBayCoordinates,
         strokeColor: "#32CD32",
         strokeOpacity: 1.0,
         strokeWeight: 6
