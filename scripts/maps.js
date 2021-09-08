@@ -1,10 +1,24 @@
+// require('dotenv').config();
+// import { Loader } from "@googlemaps/js-api-loader";
 let map;
+
+// const loader = new Loader({
+//     apiKey: process.env.GMAPS,
+// });
+
+// loader.load().then( () => {
+//     map = new google.maps.Map(document.getElementById("map"), {
+//         center: { lat: 44.130408, lng: -87.617249 },
+//         zoom: 19,
+//         mapTypeId: "satellite",
+//     });
+// });
 
 function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 44.130408, lng: -87.617249 },
+        center: { lat: 44.157884, lng: -87.544835 },
         zoom: 19,
         mapTypeId: "satellite",
     });
@@ -46,7 +60,7 @@ function initMap() {
     });
     kewauneeRiverSegment.setMap(map);
 
-    const cityTwoRiversCoordinates = [
+    const pointPeachCoordinates = [
         { lat: 44.157291, lng: -87.542529 },
         { lat: 44.157403, lng: -87.542781 },
         { lat: 44.157614, lng: -87.543296 },
@@ -57,6 +71,18 @@ function initMap() {
         { lat: 44.158176, lng: -87.544272 },
         { lat: 44.158076, lng: -87.544524 },
         { lat: 44.157884, lng: -87.544835 },
+        { lat: 44.157576, lng: -87.545468 },
+    ]
+
+    const pointBeachSegment = new google.maps.Polyline({
+        path: pointPeachCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    pointBeachSegment.setMap(map);
+
+    const cityTwoRiversCoordinates = [
         { lat: 44.157576, lng: -87.545468 },
         { lat: 44.156852, lng: -87.546525 },
         { lat: 44.156163, lng: -87.547652 },
@@ -202,6 +228,64 @@ function initMap() {
         { lat: 44.130855, lng: -87.617319 },
         { lat: 44.130602, lng: -87.617252 },
         { lat: 44.130408, lng: -87.617249 },
+        { lat: 44.130358, lng: -87.617288 },
+        { lat: 44.129907, lng: -87.617861 },
+        { lat: 44.129867, lng: -87.617968 },
+        { lat: 44.129820, lng: -87.618184 },
+        { lat: 44.129786, lng: -87.618372 },
+        { lat: 44.129762, lng: -87.618414 },
+        { lat: 44.129680, lng: -87.618439 },
+        { lat: 44.129417, lng: -87.618330 },
+        { lat: 44.129364, lng: -87.618333 },
+        { lat: 44.129320, lng: -87.618345 },
+        { lat: 44.129237, lng: -87.618279 },
+        { lat: 44.128927, lng: -87.618164 },
+        { lat: 44.128776, lng: -87.618040 },
+        { lat: 44.128727, lng: -87.617958 },
+        { lat: 44.128625, lng: -87.617745 },
+        { lat: 44.128512, lng: -87.617655 },
+        { lat: 44.128430, lng: -87.617614 },
+        { lat: 44.128125, lng: -87.617513 },
+        { lat: 44.128001, lng: -87.617398 },
+        { lat: 44.127622, lng: -87.617249 },
+        { lat: 44.127574, lng: -87.617254 },
+        { lat: 44.127542, lng: -87.617177 },
+        { lat: 44.127521, lng: -87.617261 },
+        { lat: 44.127352, lng: -87.617272 },
+        { lat: 44.127151, lng: -87.617399 },
+        { lat: 44.126974, lng: -87.617590 },
+        { lat: 44.126684, lng: -87.617827 },
+        { lat: 44.126608, lng: -87.618182 },
+        { lat: 44.126419, lng: -87.618195 },
+        { lat: 44.126228, lng: -87.618266 },
+        { lat: 44.125941, lng: -87.618337 },
+        { lat: 44.125881, lng: -87.618333 },
+        { lat: 44.125849, lng: -87.618276 },
+        { lat: 44.125858, lng: -87.618164 },
+        { lat: 44.125895, lng: -87.618105 },
+        { lat: 44.126105, lng: -87.618001 },
+        { lat: 44.126368, lng: -87.617847 },
+        { lat: 44.126560, lng: -87.617608 },
+        { lat: 44.126734, lng: -87.617477 },
+        { lat: 44.126971, lng: -87.617165 },
+        { lat: 44.127403, lng: -87.616628 },
+        { lat: 44.127492, lng: -87.616495 },
+        { lat: 44.127559, lng: -87.616305 },
+        { lat: 44.127625, lng: -87.615936 },
+        { lat: 44.127634, lng: -87.615895 },
+        { lat: 44.127661, lng: -87.615876 },
+        { lat: 44.127690, lng: -87.615881 },
+        { lat: 44.127697, lng: -87.615617 },
+        { lat: 44.127699, lng: -87.614933 },
+        { lat: 44.127685, lng: -87.614861 },
+        { lat: 44.127620, lng: -87.614828 },
+        { lat: 44.126817, lng: -87.614815 },
+        { lat: 44.126480, lng: -87.614866 },
+        { lat: 44.126191, lng: -87.614869 },
+        { lat: 44.126134, lng: -87.614882 },
+        { lat: 44.126087, lng: -87.614920 },
+        { lat: 44.126064, lng: -87.614957 },
+        { lat: 44.125816, lng: -87.614828 },
     ];
 
     const cityTwoRiversSegment = new google.maps.Polyline({
@@ -440,3 +524,8 @@ function initMap() {
     });
     sturgeonBayIncompleteSegment.setMap(map);
 }
+
+const domContainer = document.querySelector('#map');
+// ReactDOM.render(e(LikeButton), domContainer);
+
+exports.initMap = initMap;
