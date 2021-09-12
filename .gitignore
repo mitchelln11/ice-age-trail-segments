@@ -5,4 +5,5 @@ packageMapLoader.js
 package.json
 package-lock.json
 index.html
+index.ejs
 /css
