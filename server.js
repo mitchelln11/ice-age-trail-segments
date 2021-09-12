@@ -34,8 +34,13 @@ const port = 3000;
 app.use('css', {'Content-Type': 'text/css'}, express.static(`${__dirname}/css/styles.css`));
 app.use('test', express.static(`${__dirname}/test.js`));
 
+
+// Set Views
+app.set('view engine', 'ejs');
+
 app.get('', (req,res) => {
-    res.sendFile(`${__dirname}/index.html` )
+    res.render('index', { text: 'This is EJS'})
+    // res.sendFile(`${__dirname}/index.html` )
 });
 
 app.listen(port, (error) => {
