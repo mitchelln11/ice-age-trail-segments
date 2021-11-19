@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 43.492548, lng: -88.203603 },
+        center: { lat: 43.119467, lng: -88.334223 },
         zoom: 17,
         mapTypeId: "satellite",
     });
@@ -1186,7 +1186,6 @@ function initMap() {
     });
     milwaukeeRiverWashCoSegment.setMap(map);
 
-
     const kewaskumCoordinates = [
         { lat: 43.495338, lng: -88.214646 },
         { lat: 43.494941, lng: -88.214533 },
@@ -1296,6 +1295,36 @@ function initMap() {
         strokeWeight: 6
     });
     kewaskumSegment.setMap(map);
+
+    const hartlandCoordinates = [
+        { lat: 43.119702, lng: -88.334190 },
+        { lat: 43.119467, lng: -88.334223 },
+        { lat: 43.119413, lng: -88.335489 },
+        { lat: 43.119319, lng: -88.335527 },
+        { lat: 43.119198, lng: -88.335564 },
+        { lat: 43.118971, lng: -88.335698 },
+        { lat: 43.118794, lng: -88.335704 },
+        { lat: 43.118501, lng: -88.335682 },
+        { lat: 43.118431, lng: -88.335677 },
+        { lat: 43.118186, lng: -88.335733 },
+        { lat: 43.118010, lng: -88.335835 },
+        { lat: 43.117906, lng: -88.335974 },
+        { lat: 43.117812, lng: -88.336114 },
+        { lat: 43.117649, lng: -88.336326 },
+        { lat: 43.117542, lng: -88.336500 },
+        { lat: 43.117444, lng: -88.336632 },
+        { lat: 43.117377, lng: -88.336699 },
+        { lat: 43.117127, lng: -88.336884 },
+        { lat: 43.116833, lng: -88.337203 },
+    ]
+
+    const hartlandSegment = new google.maps.Polyline({
+        path: hartlandCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    hartlandSegment.setMap(map);
 }
 const domContainer = document.querySelector('#map');
 // ReactDOM.render(e(LikeButton), domContainer);
