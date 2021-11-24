@@ -7,3 +7,4 @@ package-lock.json
 index.html
 index.ejs
 /css
+Dockerfile
