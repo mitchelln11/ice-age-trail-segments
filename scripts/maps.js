@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 43.072977, lng: -88.358454 },
+        center: { lat: 43.055506, lng: -88.371839 },
         zoom: 17,
         mapTypeId: "satellite",
     });
@@ -1634,6 +1634,22 @@ function initMap() {
         strokeWeight: 6
     });
     hartlandSegment.setMap(map);
+
+    const delafieldCoordinates = [
+        { lat: 43.054442, lng: -88.371490 },
+        { lat: 43.054573, lng: -88.371699 },
+        { lat: 43.054644, lng: -88.371603 },
+        { lat: 43.055410, lng: -88.371729 },
+        { lat: 43.055506, lng: -88.371839 },
+    ]
+
+    const delafieldSegment = new google.maps.Polyline({
+        path: delafieldCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    delafieldSegment.setMap(map);
 }
 const domContainer = document.querySelector('#map');
 // ReactDOM.render(e(LikeButton), domContainer);
