@@ -4,11 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-<<<<<<< HEAD
-        center: { lat: 43.054442, lng: -88.371490 },
-=======
         center: { lat: 43.056929, lng: -88.413789 },
->>>>>>> delafieldSegment
         zoom: 17,
         mapTypeId: "satellite",
     });
