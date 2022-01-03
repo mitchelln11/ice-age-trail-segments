@@ -2131,6 +2131,29 @@ function initMap() {
     });
     laphamPeakSegment.setMap(map);
 
+    const watervilleCoordinates = [
+        { lat: 43.016105, lng: -88.437733 },
+        { lat: 43.014724, lng: -88.436725 },
+        { lat: 43.014571, lng: -88.436832 },
+        { lat: 43.014532, lng: -88.437041 },
+        { lat: 43.014387, lng: -88.438769 },
+        { lat: 43.014360, lng: -88.438962 },
+        { lat: 43.014309, lng: -88.439176 },
+        { lat: 43.014285, lng: -88.440040 },
+        { lat: 43.014191, lng: -88.441150 },
+        { lat: 43.014144, lng: -88.441467 },
+        { lat: 43.014124, lng: -88.441934 },
+        { lat: 43.014038, lng: -88.442706 },
+    ]
+
+    const watervilleSegment = new google.maps.Polyline({
+        path: watervilleCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    watervilleSegment.setMap(map);
+
 }
 const domContainer = document.querySelector('#map');
 // ReactDOM.render(e(LikeButton), domContainer);
