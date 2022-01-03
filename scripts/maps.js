@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 42.980430, lng: -88.448702 },
+        center: { lat: 42.965642, lng: -88.453846 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -2143,7 +2143,7 @@ function initMap() {
         { lat: 43.014191, lng: -88.441150 },
         { lat: 43.014144, lng: -88.441467 },
         { lat: 43.014124, lng: -88.441934 },
-        { lat: 43.014038, lng: -88.442706 },
+        { lat: 43.014038, lng: -88.442706 }
     ]
 
     const watervilleSegment = new google.maps.Polyline({
@@ -2262,7 +2262,7 @@ function initMap() {
         { lat: 42.978193, lng: -88.452253 },
         { lat: 42.978142, lng: -88.452256 },
         { lat: 42.978061, lng: -88.452130 },
-        { lat: 42.977641, lng: -88.452375 },
+        { lat: 42.977641, lng: -88.452375 }
     ]
 
     const watervillePt2Segment = new google.maps.Polyline({
@@ -2273,6 +2273,23 @@ function initMap() {
     });
     watervillePt2Segment.setMap(map);
 
+    const scuppernongCoordinates = [
+        { lat: 42.966657, lng: -88.461259 },
+        { lat: 42.966500, lng: -88.454275 },
+        { lat: 42.966470, lng: -88.454130 },
+        { lat: 42.966355, lng: -88.453993 },
+        { lat: 42.966201, lng: -88.453923 },
+        { lat: 42.966068, lng: -88.453918 },
+        { lat: 42.965642, lng: -88.453846 },
+    ]
+
+    const scuppernongSegment = new google.maps.Polyline({
+        path: scuppernongCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    scuppernongSegment.setMap(map);
 }
 const domContainer = document.querySelector('#map');
 // ReactDOM.render(e(LikeButton), domContainer);
