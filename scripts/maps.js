@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 43.012853, lng: -88.399523 },
+        center: { lat: 43.016105, lng: -88.437733 },
         zoom: 17,
         mapTypeId: "satellite",
     });
@@ -1721,7 +1721,7 @@ function initMap() {
         { lat: 43.052745, lng: -88.413974 },
         { lat: 43.052560, lng: -88.414038 },
         { lat: 43.051910, lng: -88.414020 },
-        { lat: 43.051639, lng: -88.413947 },
+        { lat: 43.051639, lng: -88.413947 }
     ]
 
     const delafieldSegment = new google.maps.Polyline({
@@ -2113,6 +2113,14 @@ function initMap() {
         { lat: 43.013179, lng: -88.398788 },
         { lat: 43.012861, lng: -88.399223 },
         { lat: 43.012853, lng: -88.399523 },
+        { lat: 43.015536, lng: -88.407093 },
+        { lat: 43.017474, lng: -88.412693 },
+        { lat: 43.017670, lng: -88.413916 },
+        { lat: 43.017705, lng: -88.414490 },
+        { lat: 43.017689, lng: -88.415477 },
+        { lat: 43.016909, lng: -88.426614 },
+        { lat: 43.016501, lng: -88.432332 },
+        { lat: 43.016105, lng: -88.437733 }
     ]
 
     const laphamPeakSegment = new google.maps.Polyline({
