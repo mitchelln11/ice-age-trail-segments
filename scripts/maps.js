@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 42.931332, lng: -88.460954 },
+        center: { lat: 42.918801, lng: -88.473609 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -2485,6 +2485,20 @@ function initMap() {
         strokeWeight: 6
     });
     scuppernongSegment.setMap(map);
+
+    const eagleCoordinates = [
+        { lat: 42.918942, lng: -88.473423 },
+        { lat: 42.918801, lng: -88.473609 },
+        { lat: 42.918709, lng: -88.473694 },
+    ]
+
+    const eagleSegment = new google.maps.Polyline({
+        path: eagleCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    eagleSegment.setMap(map);
 }
 const domContainer = document.querySelector('#map');
 // ReactDOM.render(e(LikeButton), domContainer);
