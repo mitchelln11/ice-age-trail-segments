@@ -2804,6 +2804,32 @@ function initMap() {
         strokeWeight: 6
     });
     eagleSegment.setMap(map);
+
+    const stonyRidgeCoordinates = [
+        { lat: 42.879214, lng: -88.502992 },
+        { lat: 42.878223, lng: -88.502933 },
+        { lat: 42.878117, lng: -88.503222 },
+        { lat: 42.877983, lng: -88.503431 },
+        { lat: 42.877893, lng: -88.503528 },
+        { lat: 42.877606, lng: -88.503732 },
+        { lat: 42.877527, lng: -88.503823 },
+        { lat: 42.877394, lng: -88.504274 },
+        { lat: 42.877288, lng: -88.504445 },
+        { lat: 42.876761, lng: -88.504536 },
+        { lat: 42.876580, lng: -88.504644 },
+        { lat: 42.876187, lng: -88.505110 },
+        { lat: 42.876094, lng: -88.505301 },
+        { lat: 42.876061, lng: -88.505422 },
+        { lat: 42.876061, lng: -88.505422 },
+    ]
+
+    const stonyRidgeSegment = new google.maps.Polyline({
+        path: stonyRidgeCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    stonyRidgeSegment.setMap(map);
 }
 const domContainer = document.querySelector('#map');
 // ReactDOM.render(e(LikeButton), domContainer);
