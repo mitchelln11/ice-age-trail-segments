@@ -1296,6 +1296,32 @@ function initMap() {
     });
     kewaskumSegment.setMap(map);
 
+    const westBendCoordinates = [
+        { lat: 43.455493, lng: -88.208458 },
+        { lat: 43.452787, lng: -88.210899 },
+        { lat: 43.452156, lng: -88.211247 },
+        { lat: 43.452173, lng: -88.211634 },
+        { lat: 43.452095, lng: -88.211789 },
+        { lat: 43.452020, lng: -88.211900 },
+        { lat: 43.452057, lng: -88.212391 },
+        { lat: 43.451643, lng: -88.212478 },
+        { lat: 43.451456, lng: -88.212540 },
+        { lat: 43.451426, lng: -88.212423 },
+        { lat: 43.451297, lng: -88.212309 },
+        { lat: 43.451035, lng: -88.212320 },
+        { lat: 43.451029, lng: -88.212539 },
+        { lat: 43.451013, lng: -88.212621 },
+        { lat: 43.451013, lng: -88.212621 },
+    ]
+
+    const westBendSegment = new google.maps.Polyline({
+        path: westBendCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    westBendSegment.setMap(map);
+
     const mertonCoordinates = [
         { lat: 43.161173, lng: -88.355541 },
         { lat: 43.161094, lng: -88.355602 },
