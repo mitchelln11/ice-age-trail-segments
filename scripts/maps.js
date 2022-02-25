@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 43.459435, lng: -88.221108 },
+        center: { lat: 44.254064, lng: -87.654042 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -273,6 +273,19 @@ function initMap() {
         strokeWeight: 6
     });
     kewauneeRiverSegment.setMap(map);
+
+    const mishicotCoordinates = [
+        { lat: 44.254097, lng: -87.654168 },
+        { lat: 44.254064, lng: -87.654042 },
+    ];
+
+    const mishicotSegment = new google.maps.Polyline({
+        path: mishicotCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    mishicotSegment.setMap(map);
 
     const pointPeachCoordinates = [
         { lat: 44.157291, lng: -87.542529 },
