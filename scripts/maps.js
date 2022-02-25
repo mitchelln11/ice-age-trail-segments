@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 43.402050, lng: -88.217389 },
+        center: { lat: 43.459435, lng: -88.221108 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -1295,6 +1295,61 @@ function initMap() {
         strokeWeight: 6
     });
     kewaskumSegment.setMap(map);
+
+    const southernKewaskumCoordinates = [
+        { lat: 43.459470, lng: -88.221601 },
+        { lat: 43.459463, lng: -88.221210 },
+        { lat: 43.459435, lng: -88.221108 },
+        { lat: 43.459460, lng: -88.220957 },
+        { lat: 43.459439, lng: -88.220726 },
+        { lat: 43.459462, lng: -88.220516 },
+        { lat: 43.459434, lng: -88.220343 },
+        { lat: 43.459459, lng: -88.220195 },
+        { lat: 43.459404, lng: -88.219673 },
+        { lat: 43.459436, lng: -88.219327 },
+        { lat: 43.459385, lng: -88.218909 },
+        { lat: 43.459379, lng: -88.218145 },
+        { lat: 43.459412, lng: -88.218077 },
+        { lat: 43.459472, lng: -88.218026 },
+        { lat: 43.459507, lng: -88.217868 },
+        { lat: 43.459573, lng: -88.217778 },
+        { lat: 43.459656, lng: -88.217744 },
+        { lat: 43.459725, lng: -88.217727 },
+        { lat: 43.459808, lng: -88.217658 },
+        { lat: 43.459852, lng: -88.217571 },
+        { lat: 43.459899, lng: -88.217481 },
+        { lat: 43.459971, lng: -88.217404 },
+        { lat: 43.460005, lng: -88.217330 },
+        { lat: 43.459992, lng: -88.217271 },
+        { lat: 43.459919, lng: -88.217200 },
+        { lat: 43.459529, lng: -88.216936 },
+        { lat: 43.459402, lng: -88.216699 },
+        { lat: 43.459319, lng: -88.215170 },
+        { lat: 43.459295, lng: -88.214047 },
+        { lat: 43.459292, lng: -88.212520 },
+        { lat: 43.459259, lng: -88.210876 },
+        { lat: 43.459241, lng: -88.208478 },
+        { lat: 43.459220, lng: -88.207011 },
+        { lat: 43.459146, lng: -88.206804 },
+        { lat: 43.458782, lng: -88.206946 },
+        { lat: 43.458486, lng: -88.207118 },
+        { lat: 43.456667, lng: -88.208497 },
+        { lat: 43.456350, lng: -88.208717 },
+        { lat: 43.456136, lng: -88.208835 },
+        { lat: 43.455863, lng: -88.208904 },
+        { lat: 43.455848, lng: -88.208711 },
+        { lat: 43.455791, lng: -88.208647 },
+        { lat: 43.455764, lng: -88.208454 },
+        { lat: 43.455493, lng: -88.208458 }
+    ]
+
+    const southernKewaskumSegment = new google.maps.Polyline({
+        path: southernKewaskumCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    southernKewaskumSegment.setMap(map);
 
     const westBendCoordinates = [
         { lat: 43.455493, lng: -88.208458 },
