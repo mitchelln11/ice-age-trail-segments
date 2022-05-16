@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 43.237725, lng: -88.328998 },
+        center: { lat: 43.320952, lng: -88.303933 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -1776,6 +1776,44 @@ function initMap() {
         strokeWeight: 6
     });
     westBendSegment.setMap(map);
+
+    const pikeLakeCoordinates = [
+        { lat: 43.325076, lng: -88.299509 },
+        { lat: 43.324625, lng: -88.299513 },
+        { lat: 43.324425, lng: -88.299509 },
+        { lat: 43.324323, lng: -88.299477 },
+        { lat: 43.323603, lng: -88.299502 },
+        { lat: 43.323143, lng: -88.299532 },
+        { lat: 43.322567, lng: -88.299518 },
+        { lat: 43.321235, lng: -88.299569 },
+        { lat: 43.321127, lng: -88.299768 },
+        { lat: 43.321022, lng: -88.299870 },
+        { lat: 43.320721, lng: -88.300117 },
+        { lat: 43.320647, lng: -88.300307 },
+        { lat: 43.320667, lng: -88.300497 },
+        { lat: 43.320645, lng: -88.300806 },
+        { lat: 43.320602, lng: -88.301055 },
+        { lat: 43.320544, lng: -88.301149 },
+        { lat: 43.320587, lng: -88.301377 },
+        { lat: 43.320581, lng: -88.301514 },
+        { lat: 43.320737, lng: -88.301788 },
+        { lat: 43.320788, lng: -88.301940 },
+        { lat: 43.320802, lng: -88.302109 },
+        { lat: 43.320787, lng: -88.302379 },
+        { lat: 43.320833, lng: -88.302771 },
+        { lat: 43.320919, lng: -88.303193 },
+        { lat: 43.320921, lng: -88.303521 },
+        { lat: 43.320900, lng: -88.303657 },
+        { lat: 43.320900, lng: -88.303657 },
+    ]
+
+    const pikeLakeSegment = new google.maps.Polyline({
+        path: pikeLakeCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    pikeLakeSegment.setMap(map);
 
     const holyHillCoordinates = [
         { lat: 43.295278, lng: -88.329861 },
