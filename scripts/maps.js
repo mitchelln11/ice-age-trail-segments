@@ -1777,6 +1777,20 @@ function initMap() {
     });
     westBendSegment.setMap(map);
 
+    const slingerCoordinates = [
+        { lat: 43.339050, lng: -88.272981 },
+        { lat: 43.338421, lng: -88.273137 },
+        { lat: 43.336693, lng: -88.273453 },
+    ]
+
+    const slingerSegment = new google.maps.Polyline({
+        path: slingerCoordinates,
+        strokeColor: "#F90B1A",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    slingerSegment.setMap(map);
+
     const pikeLakeCoordinates = [
         { lat: 43.325076, lng: -88.299509 },
         { lat: 43.324625, lng: -88.299513 },
