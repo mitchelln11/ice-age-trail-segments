@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 43.352827, lng: -88.270952 },
+        center: { lat: 42.841930, lng: -88.606346 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -5227,6 +5227,51 @@ function initMap() {
         strokeWeight: 6
     });
     stonyRidgeSegment.setMap(map);
+
+    const blackhawkCoordinates = [
+        { lat: 42.842591, lng: -88.606377 },
+        { lat: 42.842481, lng: -88.606322 },
+        { lat: 42.842395, lng: -88.606258 },
+        { lat: 42.842342, lng: -88.606206 },
+        { lat: 42.842304, lng: -88.606209 },
+        { lat: 42.842262, lng: -88.606222 },
+        { lat: 42.842107, lng: -88.606326 },
+        { lat: 42.841930, lng: -88.606346 },
+        { lat: 42.841864, lng: -88.606375 },
+        { lat: 42.841770, lng: -88.606450 },
+        { lat: 42.841699, lng: -88.606461 },
+        { lat: 42.841516, lng: -88.606247 },
+        { lat: 42.841463, lng: -88.606103 },
+        { lat: 42.841452, lng: -88.606041 },
+        { lat: 42.841458, lng: -88.605933 },
+        { lat: 42.841467, lng: -88.605890 },
+        { lat: 42.841469, lng: -88.605811 },
+        { lat: 42.841447, lng: -88.605714 },
+        { lat: 42.841463, lng: -88.605533 },
+        { lat: 42.841455, lng: -88.605418 },
+        { lat: 42.841222, lng: -88.605139 },
+        { lat: 42.841154, lng: -88.604985 },
+        { lat: 42.841144, lng: -88.604785 },
+        { lat: 42.841095, lng: -88.604717 },
+        { lat: 42.841031, lng: -88.604787 },
+        { lat: 42.841016, lng: -88.604867 },
+        { lat: 42.841011, lng: -88.604961 },
+        { lat: 42.840974, lng: -88.605032 },
+        { lat: 42.840923, lng: -88.605090 },
+        { lat: 42.840905, lng: -88.605213 },
+        { lat: 42.840858, lng: -88.605378 },
+        { lat: 42.840810, lng: -88.605481 },
+        { lat: 42.840795, lng: -88.605746 },
+        { lat: 42.840799, lng: -88.605796 },
+    ]
+
+    const blackhawkSegment = new google.maps.Polyline({
+        path: blackhawkCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    blackhawkSegment.setMap(map);
 }
 const domContainer = document.querySelector('#map');
 // ReactDOM.render(e(LikeButton), domContainer);
