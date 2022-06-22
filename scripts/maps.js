@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 42.841930, lng: -88.606346 },
+        center: { lat: 42.837649, lng: -88.607170 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -5340,6 +5340,22 @@ function initMap() {
         { lat: 42.837640, lng: -88.606707 },
         { lat: 42.837635, lng: -88.607028 },
         { lat: 42.837649, lng: -88.607170 },
+        { lat: 42.837710, lng: -88.607481 },
+        { lat: 42.837669, lng: -88.607685 },
+        { lat: 42.837578, lng: -88.607883 },
+        { lat: 42.837387, lng: -88.608197 },
+        { lat: 42.837194, lng: -88.608344 },
+        { lat: 42.837115, lng: -88.608457 },
+        { lat: 42.837094, lng: -88.608513 },
+        { lat: 42.837088, lng: -88.608846 },
+        { lat: 42.837092, lng: -88.609036 },
+        { lat: 42.836948, lng: -88.609307 },
+        { lat: 42.836653, lng: -88.609699 },
+        { lat: 42.836506, lng: -88.609846 },
+        { lat: 42.836041, lng: -88.610264 },
+        { lat: 42.835963, lng: -88.610283 },
+        { lat: 42.835504, lng: -88.610098 },
+        { lat: 42.835329, lng: -88.610023 },
     ]
 
     const blackhawkSegment = new google.maps.Polyline({
