@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 42.810622, lng: -88.633414 },
+        center: { lat: 42.872006, lng: -88.543671 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -5227,6 +5227,23 @@ function initMap() {
         strokeWeight: 6
     });
     stonyRidgeSegment.setMap(map);
+
+    const blueSpringLakeCoordinates = [
+        { lat: 42.871956, lng: -88.543476 },
+        { lat: 42.872006, lng: -88.543671 },
+        { lat: 42.872018, lng: -88.543780 },
+        { lat: 42.872020, lng: -88.544095 },
+        { lat: 42.871945, lng: -88.544463 },
+        { lat: 42.871943, lng: -88.544628 },
+    ]
+
+    const blueSpringLakeSegment = new google.maps.Polyline({
+        path: blueSpringLakeCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    blueSpringLakeSegment.setMap(map);
 
     const blackhawkCoordinates = [
         { lat: 42.842591, lng: -88.606377 },
