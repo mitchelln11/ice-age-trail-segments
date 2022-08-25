@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 42.846147, lng: -88.601952 },
+        center: { lat: 42.715697, lng: -89.055270 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -6657,6 +6657,22 @@ function initMap() {
         strokeWeight: 6
     });
     blackhawkSegment.setMap(map);
+    
+    const arborRidgeCoordinates = [
+        { lat: 42.715350, lng: -89.054023 },
+        { lat: 42.715538, lng: -89.054585 },
+        { lat: 42.715697, lng: -89.055270 },
+        { lat: 42.715697, lng: -89.055270 },
+        
+    ]
+
+    const arborRidgeSegment = new google.maps.Polyline({
+        path: arborRidgeCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    arborRidgeSegment.setMap(map);
 }
 const domContainer = document.querySelector('#map');
 // ReactDOM.render(e(LikeButton), domContainer);
