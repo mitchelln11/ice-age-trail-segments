@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 44.265311, lng: -87.660569 },
+        center: { lat: 43.906212, lng: -87.948121 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -1074,6 +1074,19 @@ function initMap() {
         strokeWeight: 6
     });
     cityManitowocSegment.setMap(map);
+
+    const wallaHiCoordinates = [
+        { lat: 43.906160, lng: -87.947850 },
+        { lat: 43.906212, lng: -87.948121 },
+    ];
+
+    const wallaHiSegment = new google.maps.Polyline({
+        path: wallaHiCoordinates,
+        strokeColor: "#F90B1A",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    wallaHiSegment.setMap(map);
 
     const milwaukeeRiverWashCoCoordinates = [
         { lat: 43.545886, lng: -88.180610 },
