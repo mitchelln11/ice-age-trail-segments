@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 42.788629, lng: -88.767569 },
+        center: { lat: 42.803950, lng: -88.652495 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -7680,7 +7680,11 @@ function initMap() {
         { lat: 42.804938, lng: -88.652938 },
         { lat: 42.804864, lng: -88.652846 },
         { lat: 42.804761, lng: -88.652635 },
-        { lat: 42.804761, lng: -88.652635 },
+        { lat: 42.804643, lng: -88.652629 },
+        { lat: 42.804368, lng: -88.652509 },
+        { lat: 42.804143, lng: -88.652476 },
+        { lat: 42.804057, lng: -88.652382 },
+        { lat: 42.803950, lng: -88.652495 },
     ]
 
     const blackhawkSegment = new google.maps.Polyline({
@@ -7690,6 +7694,18 @@ function initMap() {
         strokeWeight: 6
     });
     blackhawkSegment.setMap(map);
+
+    const whitewaterCoordinates = [
+        { lat: 42.791083, lng: -88.766014 },
+        { lat: 42.790015, lng: -88.766033 },
+    ]
+    const whitewaterSegment = new google.maps.Polyline({
+        path: whitewaterCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    whitewaterSegment.setMap(map);
 
     const cloverValleyCoordinates = [
         { lat: 42.791083, lng: -88.766014 },
@@ -7799,8 +7815,6 @@ function initMap() {
     });
     cloverValleySegment.setMap(map);
 
-
-    
     const arborRidgeCoordinates = [
         { lat: 42.715350, lng: -89.054023 },
         { lat: 42.715538, lng: -89.054585 },
