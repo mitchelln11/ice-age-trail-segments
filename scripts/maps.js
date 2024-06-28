@@ -7696,8 +7696,8 @@ function initMap() {
     blackhawkSegment.setMap(map);
 
     const whitewaterCoordinates = [
-        { lat: 42.791083, lng: -88.766014 },
-        { lat: 42.790015, lng: -88.766033 },
+        { lat: 42.803950, lng: -88.652495 },
+        { lat: 42.803907, lng: -88.652796 },
     ]
     const whitewaterSegment = new google.maps.Polyline({
         path: whitewaterCoordinates,
