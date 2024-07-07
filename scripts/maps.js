@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 42.780293, lng: -88.703560 },
+        center: { lat: 43.787886, lng: -88.042289 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -1572,6 +1572,69 @@ function initMap() {
         strokeWeight: 6
     });
     cityManitowocSegment.setMap(map);
+
+    const greenbushCoordinates = [
+        { lat: 43.796482, lng: -88.035032 },
+        { lat: 43.796263, lng: -88.035060 },
+        { lat: 43.795961, lng: -88.035058 },
+        { lat: 43.795796, lng: -88.035124 },
+        { lat: 43.795549, lng: -88.035127 },
+        { lat: 43.795464, lng: -88.035092 },
+        { lat: 43.795386, lng: -88.035117 },
+        { lat: 43.795262, lng: -88.035207 },
+        { lat: 43.795130, lng: -88.035248 },
+        { lat: 43.794937, lng: -88.035261 },
+        { lat: 43.794783, lng: -88.035369 },
+        { lat: 43.794687, lng: -88.035468 },
+        { lat: 43.794479, lng: -88.035715 },
+        { lat: 43.794386, lng: -88.035730 },
+        { lat: 43.794205, lng: -88.035912 },
+        { lat: 43.794132, lng: -88.036046 },
+        { lat: 43.794041, lng: -88.036175 },
+        { lat: 43.794017, lng: -88.036311 },
+        { lat: 43.793899, lng: -88.036433 },
+        { lat: 43.793795, lng: -88.036440 },
+        { lat: 43.793702, lng: -88.036467 },
+        { lat: 43.793409, lng: -88.036349 },
+        { lat: 43.793272, lng: -88.036235 },
+        { lat: 43.792754, lng: -88.036197 },
+        { lat: 43.792626, lng: -88.036258 },
+        { lat: 43.792554, lng: -88.036342 },
+        { lat: 43.792387, lng: -88.036467 },
+        { lat: 43.792275, lng: -88.036630 },
+        { lat: 43.792152, lng: -88.036835 },
+        { lat: 43.791933, lng: -88.037233 },
+        { lat: 43.791536, lng: -88.037529 },
+        { lat: 43.791325, lng: -88.037794 },
+        { lat: 43.790942, lng: -88.037973 },
+        { lat: 43.790169, lng: -88.038424 },
+        { lat: 43.789970, lng: -88.038625 },
+        { lat: 43.789712, lng: -88.039107 },
+        { lat: 43.789660, lng: -88.039289 },
+        { lat: 43.789657, lng: -88.039433 },
+        { lat: 43.789545, lng: -88.039547 },
+        { lat: 43.789134, lng: -88.040048 },
+        { lat: 43.788614, lng: -88.040480 },
+        { lat: 43.788318, lng: -88.040696 },
+        { lat: 43.788154, lng: -88.040749 },
+        { lat: 43.787987, lng: -88.040848 },
+        { lat: 43.787856, lng: -88.040863 },
+        { lat: 43.787787, lng: -88.040939 },
+        { lat: 43.787762, lng: -88.041060 },
+        { lat: 43.787752, lng: -88.041417 },
+        { lat: 43.787891, lng: -88.041728 },
+        { lat: 43.787894, lng: -88.041959 },
+        { lat: 43.787867, lng: -88.042153 },
+        { lat: 43.787886, lng: -88.042289 },
+    ];
+
+    const greenbushSegment = new google.maps.Polyline({
+        path: greenbushCoordinates,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    greenbushSegment.setMap(map);
 
     const parnellCoordinates = [
         { lat: 43.724058, lng: -88.097029 },
