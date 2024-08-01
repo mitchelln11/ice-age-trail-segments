@@ -462,7 +462,7 @@ function initMap() {
 
     const tischMillsSegment2 = new google.maps.Polyline({
         path: tischMillsCoordinates2,
-        strokeColor: "#32CD32",
+        strokeColor: "#F90B1A",
         strokeOpacity: 1.0,
         strokeWeight: 6
     });
