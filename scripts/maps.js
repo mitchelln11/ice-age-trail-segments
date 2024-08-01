@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 44.341945, lng: -87.611603 },
+        center: { lat: 44.327186, lng: -87.635790 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -410,6 +410,63 @@ function initMap() {
         strokeWeight: 6
     });
     tischMillsSegment.setMap(map);
+
+    const tischMillsCoordinates2 = [
+        { lat: 44.327463, lng: -87.635791 },
+        { lat: 44.327186, lng: -87.635790 },
+        { lat: 44.326889, lng: -87.635762 },
+        { lat: 44.326561, lng: -87.635634 },
+        { lat: 44.326424, lng: -87.635602 },
+        { lat: 44.326125, lng: -87.635580 },
+        { lat: 44.326024, lng: -87.635628 },
+        { lat: 44.325761, lng: -87.635667 },
+        { lat: 44.325698, lng: -87.635709 },
+        { lat: 44.325621, lng: -87.635760 },
+        { lat: 44.325552, lng: -87.635824 },
+        { lat: 44.325500, lng: -87.635913 },
+        { lat: 44.325379, lng: -87.635958 },
+        { lat: 44.325274, lng: -87.636041 },
+        { lat: 44.325064, lng: -87.636216 },
+        { lat: 44.324970, lng: -87.636335 },
+        { lat: 44.324953, lng: -87.636434 },
+        { lat: 44.324823, lng: -87.636536 },
+        { lat: 44.324774, lng: -87.636523 },
+        { lat: 44.324728, lng: -87.636427 },
+        { lat: 44.324692, lng: -87.636417 },
+        { lat: 44.324662, lng: -87.636456 },
+        { lat: 44.324603, lng: -87.636634 },
+        { lat: 44.324657, lng: -87.636905 },
+        { lat: 44.324708, lng: -87.636972 },
+        { lat: 44.324765, lng: -87.636998 },
+        { lat: 44.324810, lng: -87.637059 },
+        { lat: 44.324901, lng: -87.637639 },
+        { lat: 44.324801, lng: -87.637811 },
+        { lat: 44.324603, lng: -87.638606 },
+        { lat: 44.324438, lng: -87.638653 },
+        { lat: 44.324340, lng: -87.638682 },
+        { lat: 44.324080, lng: -87.638969 },
+        { lat: 44.324046, lng: -87.639036 },
+        { lat: 44.324041, lng: -87.639231 },
+        { lat: 44.324096, lng: -87.639578 },
+        { lat: 44.324114, lng: -87.639741 },
+        { lat: 44.324094, lng: -87.639802 },
+        { lat: 44.324012, lng: -87.639958 },
+        { lat: 44.323973, lng: -87.640373 },
+        { lat: 44.323991, lng: -87.640526 },
+        { lat: 44.323945, lng: -87.640778 },
+        { lat: 44.323927, lng: -87.641336 },
+        { lat: 44.323904, lng: -87.643070 },
+        { lat: 44.323892, lng: -87.643290 },
+        { lat: 44.323879, lng: -87.644222 },
+    ];
+
+    const tischMillsSegment2 = new google.maps.Polyline({
+        path: tischMillsCoordinates2,
+        strokeColor: "#32CD32",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    tischMillsSegment2.setMap(map);
 
     const eastTwinRiverCoordinates = [
         { lat: 44.276884, lng: -87.666172 },
