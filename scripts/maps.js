@@ -728,7 +728,7 @@ function initMap() {
     });
     mishicotSegment.setMap(map);
 
-    const pointPeachCoordinates = [
+    const pointPeachCoordinatesIncomplete = [
         { lat: 44.239818, lng: -87.528464 },
         { lat: 44.239815, lng: -87.528188 },
         { lat: 44.239829, lng: -87.528149 },
@@ -822,6 +822,19 @@ function initMap() {
         { lat: 44.237460, lng: -87.519000 },
         { lat: 44.237353, lng: -87.518898 },
         { lat: 44.237209, lng: -87.518863 },
+        { lat: 44.236913, lng: -87.518756 },
+        
+    ]
+
+    const pointBeachSegmentIncomplete = new google.maps.Polyline({
+        path: pointPeachCoordinatesIncomplete,
+        strokeColor: "#F90B1A",
+        strokeOpacity: 1.0,
+        strokeWeight: 6
+    });
+    pointBeachSegmentIncomplete.setMap(map);
+
+    const pointPeachCoordinates = [
         { lat: 44.236913, lng: -87.518756 },
         { lat: 44.236648, lng: -87.518731 },
         { lat: 44.236303, lng: -87.518720 },
@@ -1242,7 +1255,7 @@ function initMap() {
 
     const pointBeachSegment = new google.maps.Polyline({
         path: pointPeachCoordinates,
-        strokeColor: "#F90B1A",
+        strokeColor: "#32CD32",
         strokeOpacity: 1.0,
         strokeWeight: 6
     });
