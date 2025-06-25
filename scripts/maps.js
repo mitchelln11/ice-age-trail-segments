@@ -2591,7 +2591,7 @@ function initMap() {
 
     const parnellSegment2 = new google.maps.Polyline({
         path: parnellCoordinates2,
-        strokeColor: "#F90B1A",
+        strokeColor: "#32CD32",
         strokeOpacity: 1.0,
         strokeWeight: 6
     });
