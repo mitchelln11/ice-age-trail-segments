@@ -4,7 +4,7 @@ function initMap() {
 
     // Master map
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat:44.693972, lng: -87.489484 },
+        center: { lat: 43.821122, lng: -87.991430 },
         zoom: 18,
         mapTypeId: "satellite",
     });
@@ -3132,13 +3132,39 @@ function initMap() {
     cityManitowocSegment.setMap(map);
 
     const laBuddeCreekCoordinates = [
-        { lat: 43.155430, lng: -88.148202 },
-        { lat: 43.155521, lng: -88.148184 },
+        { lat: 43.819204, lng: -87.992569 },
+        { lat: 43.819292, lng: -87.992512 },
+        { lat: 43.819389, lng: -87.992520 },
+        { lat: 43.819483, lng: -87.992520 },
+        { lat: 43.819576, lng: -87.992546 },
+        { lat: 43.819663, lng: -87.992591 },
+        { lat: 43.819755, lng: -87.992641 },
+        { lat: 43.819846, lng: -87.992583 },
+        { lat: 43.819938, lng: -87.992558 },
+        { lat: 43.820042, lng: -87.992570 },
+        { lat: 43.820131, lng: -87.992624 },
+        { lat: 43.820223, lng: -87.992671 },
+        { lat: 43.820319, lng: -87.992707 },
+        { lat: 43.820414, lng: -87.992729 },
+        { lat: 43.820520, lng: -87.992705 },
+        { lat: 43.820585, lng: -87.992603 },
+        { lat: 43.820591, lng: -87.992479 },
+        { lat: 43.820630, lng: -87.992359 },
+        { lat: 43.820681, lng: -87.992240 },
+        { lat: 43.820718, lng: -87.992124 },
+        { lat: 43.820733, lng: -87.991990 },
+        { lat: 43.820750, lng: -87.991863 },
+        { lat: 43.820790, lng: -87.991749 },
+        { lat: 43.820878, lng: -87.991711 },
+        { lat: 43.820947, lng: -87.991621 },
+        { lat: 43.821026, lng: -87.991537 },
+        { lat: 43.821121, lng: -87.991483 },
+        { lat: 43.821210, lng: -87.991455 }
     ];
 
     const laBuddeCreekSegment = new google.maps.Polyline({
         path: laBuddeCreekCoordinates,
-        strokeColor: "#32CD32",
+        strokeColor: "#F90B1A",
         strokeOpacity: 1.0,
         strokeWeight: 6
     });
