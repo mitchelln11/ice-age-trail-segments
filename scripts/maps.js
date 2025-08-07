@@ -1594,7 +1594,7 @@ function initMap() {
 
     const forestvilleSegment = new google.maps.Polyline({
         path: forestvilleCoordinates,
-        strokeColor: "#F90B1A",
+        strokeColor: "#32CD32",
         strokeOpacity: 1.0,
         strokeWeight: 6
     });
