@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:gx="http://www.google.com/kml/ext/2.2">
+  <Document>
+    <open>1</open>
+    <visibility>1</visibility>
+    <name>Aug 3, 2025 6:45:39 PM</name>
+    <atom:author>
+      <atom:name>Recorded in Geo Tracker for Android from Ilya Bogdanovich</atom:name>
+    </atom:author>
+    <atom:link href="https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker" />
+    <TimeStamp>
+      <when>2025-08-03T23:45:39.248Z</when>
+    </TimeStamp>
+    <Style id="track">
+      <LineStyle>
+        <color>ffff9509</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Schema id="geotrackerTrackSchema">
+      <gx:SimpleArrayField name="speed" type="float">
+        <displayName>Speed, meters per second</displayName>
+      </gx:SimpleArrayField>
+      <gx:SimpleArrayField name="course" type="float">
+        <displayName>Course, radians</displayName>
+      </gx:SimpleArrayField>
+    </Schema>
+    <Placemark id="tour">
+      <name>Aug 3, 2025 6:45:39 PM</name>
+      <atom:author>
+        <atom:name>Recorded in Geo Tracker for Android from Ilya Bogdanovich</atom:name>
+      </atom:author>
+      <atom:link href="https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker" />
+      <ExtendedData>
+        <Data name="activity">
+          <value>0</value>
+        </Data>
+      </ExtendedData>
+      <TimeSpan>
+        <begin>2025-08-03T23:45:39.248Z</begin>
+        <end>2025-08-03T23:51:40.701Z</end>
+      </TimeSpan>
+      <styleUrl>#track</styleUrl>
+      <gx:MultiTrack>
+        <altitudeMode>absolute</altitudeMode>
+        <gx:interpolate>0</gx:interpolate>
+        <gx:Track>
+          <when>2025-08-03T23:46:24Z</when>
+          <when>2025-08-03T23:46:43Z</when>
+          <when>2025-08-03T23:46:55Z</when>
+          <when>2025-08-03T23:47:05Z</when>
+          <when>2025-08-03T23:47:12Z</when>
+          <when>2025-08-03T23:47:20Z</when>
+          <when>2025-08-03T23:47:28Z</when>
+          <when>2025-08-03T23:47:35Z</when>
+          <when>2025-08-03T23:47:45Z</when>
+          <when>2025-08-03T23:47:54Z</when>
+          <when>2025-08-03T23:48:04Z</when>
+          <when>2025-08-03T23:48:13Z</when>
+          <when>2025-08-03T23:48:22Z</when>
+          <when>2025-08-03T23:48:29Z</when>
+          <when>2025-08-03T23:48:37Z</when>
+          <when>2025-08-03T23:48:45Z</when>
+          <when>2025-08-03T23:48:52Z</when>
+          <when>2025-08-03T23:49:02Z</when>
+          <when>2025-08-03T23:49:10Z</when>
+          <when>2025-08-03T23:49:20Z</when>
+          <when>2025-08-03T23:49:27Z</when>
+          <when>2025-08-03T23:49:35Z</when>
+          <when>2025-08-03T23:49:46Z</when>
+          <when>2025-08-03T23:49:55Z</when>
+          <when>2025-08-03T23:50:05Z</when>
+          <when>2025-08-03T23:50:26Z</when>
+          <when>2025-08-03T23:50:39Z</when>
+          <when>2025-08-03T23:50:47Z</when>
+          <when>2025-08-03T23:51:38Z</when>
+          <gx:coord>-87.99256981 43.81920438 248</gx:coord>
+          <gx:coord>-87.99251273 43.81929285 247</gx:coord>
+          <gx:coord>-87.99252061 43.8193897 247</gx:coord>
+          <gx:coord>-87.99252011 43.81948391 249</gx:coord>
+          <gx:coord>-87.99254643 43.81957628 250</gx:coord>
+          <gx:coord>-87.99259169 43.81966325 249</gx:coord>
+          <gx:coord>-87.99264173 43.81975528 249</gx:coord>
+          <gx:coord>-87.99258356 43.81984635 249</gx:coord>
+          <gx:coord>-87.99255892 43.81993897 249</gx:coord>
+          <gx:coord>-87.99257048 43.82004232 250</gx:coord>
+          <gx:coord>-87.99262404 43.82013188 249</gx:coord>
+          <gx:coord>-87.99267107 43.82022379 249</gx:coord>
+          <gx:coord>-87.99270778 43.82031921 248</gx:coord>
+          <gx:coord>-87.99272949 43.82041481 247</gx:coord>
+          <gx:coord>-87.99270594 43.82052046 246</gx:coord>
+          <gx:coord>-87.99260368 43.82058542 245</gx:coord>
+          <gx:coord>-87.99247937 43.82059146 245</gx:coord>
+          <gx:coord>-87.99235985 43.8206306 245</gx:coord>
+          <gx:coord>-87.99224091 43.82068177 245</gx:coord>
+          <gx:coord>-87.99212482 43.82071844 245</gx:coord>
+          <gx:coord>-87.99199046 43.82073357 244</gx:coord>
+          <gx:coord>-87.99186314 43.82075025 243</gx:coord>
+          <gx:coord>-87.99174973 43.82079061 243</gx:coord>
+          <gx:coord>-87.991711 43.82087875 242</gx:coord>
+          <gx:coord>-87.99162165 43.82094735 242</gx:coord>
+          <gx:coord>-87.99153716 43.82102698 243</gx:coord>
+          <gx:coord>-87.99148352 43.82112182 242</gx:coord>
+          <gx:coord>-87.99145552 43.82121034 242</gx:coord>
+          <gx:coord>-87.99143013 43.8211222 242</gx:coord>
+        </gx:Track>
+      </gx:MultiTrack>
+    </Placemark>
+  </Document>
+</kml>
