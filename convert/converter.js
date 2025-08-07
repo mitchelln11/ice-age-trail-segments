@@ -7,9 +7,26 @@ const parser = new xml2js.Parser({
     tagNameProcessors: [xml2js.processors.stripPrefix] // Remove 'gx:' prefix, will search for 'coord' later
 });
 
-const filePath = path.join(__dirname, 'Aug_3,_2025_6_45_39_PM.kml');
+// const filePath = path.join(__dirname, 'Aug_3,_2025_6_45_39_PM.kml');
+// Define folder
+const convertDir = path.join(__dirname);
 
-fs.readFile(filePath, (err, data) => {
+// Read all files in the folder
+const files = fs.readdirSync(convertDir);
+
+// Find the first .kml file (or filter all of them if needed)
+const kmlFile = files.find(file => path.extname(file).toLowerCase() === '.kml');
+
+if (!kmlFile) {
+    console.error('No .kml file found in convert directory');
+    process.exit(1);
+}
+
+// Full path to use for parsing
+const kmlPath = path.join(convertDir, kmlFile);
+console.log('Using KML file:', kmlPath);
+
+fs.readFile(kmlPath, (err, data) => {
     if (err) throw err;
 
     parser.parseString(data, (err, result) => {

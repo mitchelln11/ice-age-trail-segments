@@ -9,3 +9,6 @@ You will be sent an email with an attachment you chose.
 
 1. After downloading the attachment, drop it into the convert folder
 2. Scroll down. You will see the `<gx:coord>` open and close tags. These hold the coordinates you will need to show on your Google Maps.
+3. In your terminal, run `npm run geo` which is located in the `package.json` file. This runs the functions on the `converter.js`
+
+For now, just have 1 `kml` file in the `convert` directory at a time.
