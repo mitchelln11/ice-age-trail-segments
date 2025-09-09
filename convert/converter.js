@@ -34,7 +34,8 @@ fs.readFile(kmlPath, (err, data) => {
 
         const placemarks = findAllKeys(result, 'coord'); // because we removed the 'gx:' prefix
 
-        console.log(placemarks) // All we are doing is logging the coordinates to the console. You can copy and paste as need to `map.js` file
+        // console.log(placemarks) // All we are doing is logging the coordinates to the console. You can copy and paste as need to `map.js` file
+        console.dir(placemarks, {'maxArrayLength': null}) ;
     });
 })
 
