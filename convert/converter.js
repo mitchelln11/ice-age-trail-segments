@@ -50,7 +50,6 @@ function findAllKeys(obj, keyToFind) {
         for (let key in obj) {
             if (key === keyToFind) {
                 const coords = obj[key];
-                const parsedCoords = [];
 
                 coords.forEach(coordStr => {
                     // Separating into arrays, '-87.99199046 43.82073357 244' (longitude, latitude, altitude)
@@ -59,12 +58,11 @@ function findAllKeys(obj, keyToFind) {
                     // Split based on period
                     const [lonDeg, lonMinutes] = lon.split('.')
                     const [latDeg, latMinutes] = lat.split('.')
-                    parsedCoords.push({
+                    results.push({
                         // Slice the minutes to 6 decimal places
                         lat: `${latDeg}.${latMinutes.slice(0,6)}`, lng: `${lonDeg}.${lonMinutes.slice(0,6)}`,
                     })
                 })
-                results.push(parsedCoords);
             } else {
                 recursiveSearch(obj[key]);
             }
@@ -72,7 +70,6 @@ function findAllKeys(obj, keyToFind) {
     }
 
     recursiveSearch(obj);
-    // console.log('Break');
-    // console.log(results);
     return results
+    // return results.reverse() // Use if path walked in reverse direction
 }
