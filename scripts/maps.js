@@ -21975,9 +21975,6 @@ function initMap() {
         { lat: 42.715216, lng: -89.053635 },
         { lat: 42.715222, lng: -89.053676 },
         { lat: 42.715233, lng: -89.053713 },
-
-        
-
     ]
     const janesvilleSegment = new google.maps.Polyline({
         path: janesvilleCoordinates,
