@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:gx="http://www.google.com/kml/ext/2.2">
+  <Document>
+    <open>1</open>
+    <visibility>1</visibility>
+    <name>Feb 9, 2026 12:50:04 PM</name>
+    <atom:author>
+      <atom:name>Recorded in Geo Tracker for Android from Ilya Bogdanovich</atom:name>
+    </atom:author>
+    <atom:link href="https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker" />
+    <TimeStamp>
+      <when>2026-02-09T18:50:04.698Z</when>
+    </TimeStamp>
+    <Style id="track">
+      <LineStyle>
+        <color>ffff9509</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Schema id="geotrackerTrackSchema">
+      <gx:SimpleArrayField name="speed" type="float">
+        <displayName>Speed, meters per second</displayName>
+      </gx:SimpleArrayField>
+      <gx:SimpleArrayField name="course" type="float">
+        <displayName>Course, radians</displayName>
+      </gx:SimpleArrayField>
+    </Schema>
+    <Placemark id="tour">
+      <name>Feb 9, 2026 12:50:04 PM</name>
+      <atom:author>
+        <atom:name>Recorded in Geo Tracker for Android from Ilya Bogdanovich</atom:name>
+      </atom:author>
+      <atom:link href="https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker" />
+      <ExtendedData>
+        <Data name="activity">
+          <value>0</value>
+        </Data>
+      </ExtendedData>
+      <TimeSpan>
+        <begin>2026-02-09T18:50:04.698Z</begin>
+        <end>2026-02-09T18:51:41.794Z</end>
+      </TimeSpan>
+      <styleUrl>#track</styleUrl>
+      <gx:MultiTrack>
+        <altitudeMode>absolute</altitudeMode>
+        <gx:interpolate>0</gx:interpolate>
+        <gx:Track>
+          <when>2026-02-09T18:50:10Z</when>
+          <when>2026-02-09T18:50:16Z</when>
+          <when>2026-02-09T18:50:22Z</when>
+          <when>2026-02-09T18:50:25Z</when>
+          <when>2026-02-09T18:50:27Z</when>
+          <when>2026-02-09T18:50:29Z</when>
+          <when>2026-02-09T18:50:31Z</when>
+          <when>2026-02-09T18:50:33Z</when>
+          <when>2026-02-09T18:50:35Z</when>
+          <when>2026-02-09T18:50:37Z</when>
+          <when>2026-02-09T18:50:39Z</when>
+          <when>2026-02-09T18:50:41Z</when>
+          <when>2026-02-09T18:50:43Z</when>
+          <when>2026-02-09T18:50:45Z</when>
+          <when>2026-02-09T18:50:47Z</when>
+          <when>2026-02-09T18:50:50Z</when>
+          <when>2026-02-09T18:50:52Z</when>
+          <when>2026-02-09T18:50:54Z</when>
+          <when>2026-02-09T18:50:57Z</when>
+          <when>2026-02-09T18:50:59Z</when>
+          <when>2026-02-09T18:51:02Z</when>
+          <when>2026-02-09T18:51:04Z</when>
+          <when>2026-02-09T18:51:06Z</when>
+          <when>2026-02-09T18:51:08Z</when>
+          <when>2026-02-09T18:51:11Z</when>
+          <when>2026-02-09T18:51:15Z</when>
+          <when>2026-02-09T18:51:17Z</when>
+          <when>2026-02-09T18:51:19Z</when>
+          <when>2026-02-09T18:51:22Z</when>
+          <when>2026-02-09T18:51:25Z</when>
+          <when>2026-02-09T18:51:28Z</when>
+          <when>2026-02-09T18:51:30Z</when>
+          <when>2026-02-09T18:51:32Z</when>
+          <when>2026-02-09T18:51:35Z</when>
+          <when>2026-02-09T18:51:37Z</when>
+          <gx:coord>-89.02786511 42.68555491 216</gx:coord>
+          <gx:coord>-89.02783292 42.68555 214</gx:coord>
+          <gx:coord>-89.0278066 42.68552088 211</gx:coord>
+          <gx:coord>-89.02779403 42.68548672 210</gx:coord>
+          <gx:coord>-89.02777148 42.68545106 209</gx:coord>
+          <gx:coord>-89.02775237 42.68541879 208</gx:coord>
+          <gx:coord>-89.02773536 42.68539808 208</gx:coord>
+          <gx:coord>-89.02771474 42.68538014 208</gx:coord>
+          <gx:coord>-89.02769387 42.68535957 207</gx:coord>
+          <gx:coord>-89.0276678 42.68534192 207</gx:coord>
+          <gx:coord>-89.02764416 42.68532369 206</gx:coord>
+          <gx:coord>-89.02762011 42.68530429 207</gx:coord>
+          <gx:coord>-89.02759957 42.68528711 206</gx:coord>
+          <gx:coord>-89.02757744 42.68526892 206</gx:coord>
+          <gx:coord>-89.0275585 42.68525106 206</gx:coord>
+          <gx:coord>-89.02753486 42.68522336 206</gx:coord>
+          <gx:coord>-89.02751793 42.68520433 205</gx:coord>
+          <gx:coord>-89.02749999 42.6851838 205</gx:coord>
+          <gx:coord>-89.0274777 42.68515559 205</gx:coord>
+          <gx:coord>-89.02746102 42.68513401 205</gx:coord>
+          <gx:coord>-89.02743855 42.68510589 205</gx:coord>
+          <gx:coord>-89.02741978 42.68508686 205</gx:coord>
+          <gx:coord>-89.0274036 42.68506465 205</gx:coord>
+          <gx:coord>-89.02738332 42.68504675 204</gx:coord>
+          <gx:coord>-89.02736756 42.68501897 204</gx:coord>
+          <gx:coord>-89.02738047 42.68498867 204</gx:coord>
+          <gx:coord>-89.02741425 42.68497735 203</gx:coord>
+          <gx:coord>-89.02743881 42.68496277 203</gx:coord>
+          <gx:coord>-89.02746689 42.68494802 202</gx:coord>
+          <gx:coord>-89.02749698 42.68493477 201</gx:coord>
+          <gx:coord>-89.02753537 42.68491436 201</gx:coord>
+          <gx:coord>-89.02756043 42.68489404 202</gx:coord>
+          <gx:coord>-89.02758775 42.68487589 203</gx:coord>
+          <gx:coord>-89.02762296 42.68486172 203</gx:coord>
+          <gx:coord>-89.02764827 42.68484701 204</gx:coord>
+        </gx:Track>
+      </gx:MultiTrack>
+    </Placemark>
+  </Document>
+</kml>
