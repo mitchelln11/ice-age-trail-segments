@@ -4,7 +4,7 @@ Coordinates and path are marked on a map using Google Maps.
 
 I have my profile set to the General settings which includes recording every 1 second.
 When you go to the application, find your list of recorded walks/hikes. Each trip will have the Share icon.
-You can choose between GPX, KML, and KMZ formats. I chose KML
+You can choose between GPX, KML, and KMZ formats. I chose KML.
 You will be sent an email with an attachment you chose.
 
 1. After downloading the attachment, drop it into the convert folder
