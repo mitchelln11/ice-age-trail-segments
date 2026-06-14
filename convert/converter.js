@@ -70,6 +70,6 @@ function findAllKeys(obj, keyToFind) {
     }
 
     recursiveSearch(obj);
-    return results
-    // return results.reverse() // Use if path walked in reverse direction
+    // return results // Use if path walked in forward direction
+    return results.reverse() // Use if path walked in reverse direction
 }
